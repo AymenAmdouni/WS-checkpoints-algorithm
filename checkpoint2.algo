@@ -1,0 +1,18 @@
+ALGORITHM insertion-sort
+VAR
+    arry : ARRAY_OF INTEGER;
+    cont, i, j : INTEGER;
+BEGIN
+    FOR i FROM 1 TO arry.length-1 DO
+        cont := arry[i];          
+        j := i-1;               
+
+        WHILE j >= 0 AND arry[j] > cont DO
+            arry[j+1] := arry[j]; 
+            j := j-1;            
+        END_WHILE
+
+        arry[j+1]:= cont;        
+    END_FOR
+END
+

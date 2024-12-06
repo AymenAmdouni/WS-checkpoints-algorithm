@@ -1,0 +1,32 @@
+ALGORITHM sentence
+VAR
+    ch : string ;
+    ch , i , words, vowels : INTEGER;
+    arry_vowels: ARRAY_OF CHAR["a","e","i","o","u","A","E","I","O","U"]
+
+
+BEGIN
+
+    write ("please enter a sentence ending with a period. ");
+    read (ch);
+    FOR i FROM 0 TO ch.length()-1 i++  DO
+        ch :=  +1 ;
+        IF (ch[i] = " ") THEN
+            words:=words+1;
+        END_IF
+
+    
+    
+    END_FOR
+
+    FOR i FROM 0 TO ch.length()-1 i++  DO
+        IF (ch[i] = arry_vowels ) THEN
+            vowels := vowels+1;
+        END_IF
+    END_FOR
+
+    write("sentence length of " ch " = " cont);
+    write("Number of words of " ch "=" Words);
+    writeln("Number of vowels of" ch "=" Vowels);
+
+END
